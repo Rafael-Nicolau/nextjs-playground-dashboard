@@ -55,6 +55,13 @@ export type InvoicesTable = {
   status: 'pending' | 'paid';
 };
 
+export type CardWrapperProps = {
+  totalPaidInvoices: number;
+  totalPendingInvoices: number;
+  numberOfInvoices: number;
+  numberOfCustomers: number;
+};
+
 export type CustomersTable = {
   id: string;
   name: string;
@@ -77,6 +84,7 @@ export type FormattedCustomersTable = {
 
 export type CustomerField = {
   id: string;
+  customer_id: string;
   name: string;
 };
 
